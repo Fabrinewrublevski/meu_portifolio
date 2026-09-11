@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Portfólio</title>
+
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         TEXTO GIGANTE DO FUNDO
+    ========================================== -->
+
+    <div class="texto-fundo">
+        PORTFÓLIO
+    </div>
+
+
+    <!-- =========================================
+         CABEÇALHO
+    ========================================== -->
+
+    <header>
+
+        <h1>MEU PORTFÓLIO</h1>
+
+        <p>
+            Projetos, feitos e experiências
+        </p>
+
+    </header>
+
+
+    <!-- =========================================
+         ÁREA PRINCIPAL
+    ========================================== -->
+
+    <main>
+
+
+        <!-- BOTÃO PARA VOLTAR -->
+
+        <button
+            class="botao esquerda"
+            onclick="anterior()">
+
+            ←
+
+        </button>
+
+
+        <!-- =====================================
+             ÁREA DE VISUALIZAÇÃO
+        ====================================== -->
+
+        <div class="area-visualizacao">
+
+
+            <!--
+                O PORTFOLIO contém todos os projetos.
+
+                O JavaScript vai mover essa área
+                para a esquerda e para a direita.
+            -->
+
+            <section class="portfolio">
+
+
+                <!-- =================================
+                     PROJETO 1
+                ================================== -->
+
+                <div class="projeto">
+
+
+                    <!-- JANELA DO SITE -->
+
+                    <div class="janela">
+
+
+                        <!-- Barra superior -->
+
+                        <div class="barra-navegador">
+
+                            <span></span>
+
+                            <span></span>
+
+                            <span></span>
+
+                        </div>
+
+
+                        <!-- Conteúdo do site -->
+
+                        <div class="conteudo-site">
+
+                            <h2>
+                                SITE DE RECEITAS
+                            </h2>
+
+
+                            <p>
+                                Um projeto pessoal criado
+                                para transformar o livro de
+                                receitas da minha mãe em um site.
+                            </p>
+
+
+                            <button>
+                                Ver projeto
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DESCRIÇÃO DO PROJETO -->
+
+                    <div class="descricao">
+
+                        <span>
+                            01
+                        </span>
+
+
+                        <h2>
+                            MEU PRIMEIRO PROJETO
+                        </h2>
+
+
+                        <p>
+                            Esse projeto pessoal surgiu da ideia
+                            de criar um site de receitas. Minha mãe
+                            tem um livro de receitas e decidi colocar
+                            algumas dessas receitas em um site e
+                            dar de presente para ela.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     PROJETO 2
+                ================================== -->
+
+                <div class="projeto">
+
+
+                    <!-- JANELA -->
+
+                    <div class="janela">
+
+
+                        <!-- Barra do navegador -->
+
+                        <div class="barra-navegador">
+
+                            <span></span>
+
+                            <span></span>
+
+                            <span></span>
+
+                        </div>
+
+
+                        <!-- TEXTO -->
+
+                        <div class="conteudo-texto">
+
+                            <span>
+                                02
+                            </span>
+
+
+                            <h2>
+                                MINHA TRAJETÓRIA
+                            </h2>
+
+
+                            <p>
+                                Durante minha graduação, venho
+                                desenvolvendo conhecimentos em
+                                programação e tecnologia.
+                            </p>
+
+
+                            <p>
+                                Já tive contato com HTML, CSS,
+                                JavaScript, Java, Python e
+                                banco de dados.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DESCRIÇÃO -->
+
+                    <div class="descricao">
+
+                        <span>
+                            02
+                        </span>
+
+
+                        <h2>
+                            FACULDADE
+                        </h2>
+
+
+                        <p>
+                            Durante minha graduação, desenvolvi
+                            conhecimentos em programação, lógica,
+                            desenvolvimento web, Java, Python e
+                            banco de dados.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     PROJETO 3
+                ================================== -->
+
+                <div class="projeto">
+
+
+                    <!-- JANELA -->
+
+                    <div class="janela">
+
+
+                        <!-- Barra do navegador -->
+
+                        <div class="barra-navegador">
+
+                            <span></span>
+
+                            <span></span>
+
+                            <span></span>
+
+                        </div>
+
+
+                        <!-- TEXTO -->
+
+                        <div class="conteudo-texto">
+
+                            <span>
+                                03
+                            </span>
+
+
+                            <h2>
+                                FORMAÇÃO TÉCNICA
+                            </h2>
+
+
+                            <p>
+                                Durante o Ensino Médio, também
+                                realizei uma formação técnica.
+                            </p>
+
+
+                            <p>
+                                Essa experiência me permitiu
+                                desenvolver conhecimentos e
+                                ter contato com diferentes
+                                áreas da tecnologia.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DESCRIÇÃO -->
+
+                    <div class="descricao">
+
+                        <span>
+                            03
+                        </span>
+
+
+                        <h2>
+                            ENSINO MÉDIO
+                        </h2>
+
+
+                        <p>
+                            Fiz o Ensino Médio Técnico,
+                            experiência que contribuiu para
+                            minha formação e despertou meu
+                            interesse pela área de tecnologia.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </section>
+
+        </div>
+
+
+        <!-- BOTÃO PARA AVANÇAR -->
+
+        <button
+            class="botao direita"
+            onclick="proximo()">
+
+            →
+
+        </button>
+
+
+    </main>
+
+
+
+    <!-- =========================================
+         INDICADORES
+    ========================================== -->
+
+    <div class="indicadores">
+
+        <span class="bolinha ativa"></span>
+
+        <span class="bolinha"></span>
+
+        <span class="bolinha"></span>
+
+    </div>
+
+
+
+    <!-- =========================================
+         RODAPÉ
+    ========================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 - Meu Portfólio
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

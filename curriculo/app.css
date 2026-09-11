@@ -1,0 +1,544 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    background: #8c163c;
+
+    color: #f8dce5;
+
+    font-family: Arial, sans-serif;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+
+/* =========================================
+   TEXTO GIGANTE DO FUNDO
+========================================= */
+
+.texto-fundo {
+
+    position: absolute;
+
+    top: 20%;
+
+    left: -5%;
+
+    font-family: Georgia, serif;
+
+    font-size: 18vw;
+
+    font-weight: bold;
+
+    font-style: italic;
+
+    color: rgba(255, 255, 255, 0.08);
+
+    white-space: nowrap;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+header {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    padding-top: 40px;
+}
+
+
+header h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    font-style: italic;
+
+    letter-spacing: -2px;
+}
+
+
+header p {
+
+    margin-top: 8px;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+}
+
+
+
+/* =========================================
+   ÁREA PRINCIPAL
+========================================= */
+
+main {
+
+    position: relative;
+
+    z-index: 2;
+
+    height: 70vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+
+/* =========================================
+   ÁREA QUE MOSTRA OS PROJETOS
+========================================= */
+
+.area-visualizacao {
+
+    width: 850px;
+
+    overflow: hidden;
+}
+
+
+
+/* =========================================
+   CARROSSEL
+========================================= */
+
+.portfolio {
+
+    display: flex;
+
+    width: max-content;
+
+    transition: transform 0.6s ease;
+}
+
+
+
+/* =========================================
+   CADA PROJETO
+========================================= */
+
+.projeto {
+
+    width: 850px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 40px;
+}
+
+
+
+/* =========================================
+   JANELA
+========================================= */
+
+.janela {
+
+    width: 390px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* =========================================
+   BARRA DO NAVEGADOR
+========================================= */
+
+.barra-navegador {
+
+    height: 40px;
+
+    background: #eeeeee;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding-left: 15px;
+}
+
+
+.barra-navegador span {
+
+    width: 11px;
+
+    height: 11px;
+
+    background: #555;
+
+    border-radius: 50%;
+}
+
+
+
+/* =========================================
+   CONTEÚDO DO PRIMEIRO PROJETO
+========================================= */
+
+.conteudo-site {
+
+    height: 320px;
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: #761f3d;
+}
+
+
+.conteudo-site h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+
+    font-style: italic;
+
+    margin-bottom: 15px;
+}
+
+
+.conteudo-site p {
+
+    color: #333;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+.conteudo-site button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    background: #8c163c;
+
+    color: white;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+.conteudo-site button:hover {
+
+    transform: scale(1.05);
+}
+
+
+
+/* =========================================
+   CONTEÚDO DE TEXTO
+========================================= */
+
+.conteudo-texto {
+
+    height: 320px;
+
+    padding: 30px;
+
+    color: #761f3d;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.conteudo-texto > span {
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.conteudo-texto h2 {
+
+    font-family: Georgia, serif;
+
+    font-style: italic;
+
+    font-size: 27px;
+
+    margin: 8px 0 15px;
+}
+
+
+.conteudo-texto p {
+
+    color: #333;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+
+
+/* =========================================
+   DESCRIÇÃO AO LADO
+========================================= */
+
+.descricao {
+
+    width: 280px;
+}
+
+
+.descricao > span {
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.descricao h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 35px;
+
+    font-style: italic;
+
+    margin: 10px 0;
+}
+
+
+.descricao p {
+
+    line-height: 1.5;
+
+    font-size: 15px;
+}
+
+
+
+/* =========================================
+   BOTÕES DE NAVEGAÇÃO
+========================================= */
+
+.botao {
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    z-index: 5;
+}
+
+
+.botao:hover {
+
+    background: rgba(255, 255, 255, 0.3);
+
+    transform: scale(1.1);
+}
+
+
+
+/* =========================================
+   INDICADORES
+========================================= */
+
+.indicadores {
+
+    position: relative;
+
+    z-index: 3;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+.bolinha {
+
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.4);
+
+    transition: 0.3s;
+}
+
+
+.bolinha.ativa {
+
+    background: white;
+
+    transform: scale(1.3);
+}
+
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+footer {
+
+    position: absolute;
+
+    bottom: 20px;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 12px;
+
+    opacity: 0.7;
+}
+
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+    header h1 {
+
+        font-size: 40px;
+    }
+
+
+    .area-visualizacao {
+
+        width: 80vw;
+    }
+
+
+    .projeto {
+
+        width: 80vw;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .janela {
+
+        width: 80vw;
+
+        max-width: 390px;
+    }
+
+
+    .descricao {
+
+        width: 80vw;
+
+        text-align: center;
+    }
+
+
+    .descricao h2 {
+
+        font-size: 25px;
+    }
+
+
+    .botao {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 20px;
+    }
+
+}
