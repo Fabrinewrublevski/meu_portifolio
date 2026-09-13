@@ -31,16 +31,17 @@ let projetoAtual = 0;
 // =========================================
 // FUNÇÃO PARA ATUALIZAR O PORTFÓLIO
 // =========================================
-
 function atualizarPortfolio() {
-    // Pega a largura exata do projeto atual na tela de forma dinâmica
-    const larguraProjeto = projetos[0].offsetWidth;
+    // Usamos exatamente 710 que é a largura do seu projeto no CSS
+    const larguraProjeto = 850;
 
     const movimento = projetoAtual * larguraProjeto;
 
     portfolio.style.transform = `translateX(-${movimento}px)`;
 
+    // =====================================
     // ATUALIZANDO AS BOLINHAS
+    // =====================================
     bolinhas.forEach(function(bolinha, indice) {
         bolinha.classList.remove("ativa");
 
