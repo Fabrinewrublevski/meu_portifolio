@@ -5,13 +5,14 @@
 * {
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-
     min-height: 100vh;
 
     background: #8c163c;
@@ -20,11 +21,11 @@ body {
 
     font-family: Arial, sans-serif;
 
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     position: relative;
 }
-
 
 
 /* =========================================
@@ -32,11 +33,9 @@ body {
 ========================================= */
 
 .texto-fundo {
-
     position: absolute;
 
-    top: 20%;
-
+    top: 15%;
     left: -5%;
 
     font-family: Georgia, serif;
@@ -57,13 +56,11 @@ body {
 }
 
 
-
 /* =========================================
    CABEÇALHO
 ========================================= */
 
 header {
-
     position: relative;
 
     z-index: 2;
@@ -73,9 +70,7 @@ header {
     padding-top: 40px;
 }
 
-
 header h1 {
-
     font-family: Georgia, serif;
 
     font-size: 55px;
@@ -85,9 +80,7 @@ header h1 {
     letter-spacing: -2px;
 }
 
-
 header p {
-
     margin-top: 8px;
 
     font-size: 15px;
@@ -96,18 +89,16 @@ header p {
 }
 
 
-
 /* =========================================
    ÁREA PRINCIPAL
 ========================================= */
 
 main {
-
     position: relative;
 
     z-index: 2;
 
-    height: 70vh;
+    min-height: 70vh;
 
     display: flex;
 
@@ -119,18 +110,15 @@ main {
 }
 
 
-
 /* =========================================
-   ÁREA QUE MOSTRA OS PROJETOS
+   ÁREA DE VISUALIZAÇÃO
 ========================================= */
 
 .area-visualizacao {
-
     width: 850px;
 
     overflow: hidden;
 }
-
 
 
 /* =========================================
@@ -138,7 +126,6 @@ main {
 ========================================= */
 
 .portfolio {
-
     display: flex;
 
     width: max-content;
@@ -147,13 +134,11 @@ main {
 }
 
 
-
 /* =========================================
-   CADA PROJETO
+   CADA SLIDE DO CARROSSEL
 ========================================= */
 
-.projeto {
-
+.portfolio .projeto {
     width: 850px;
 
     flex-shrink: 0;
@@ -168,13 +153,11 @@ main {
 }
 
 
-
 /* =========================================
-   JANELA
+   JANELA DO CARROSSEL
 ========================================= */
 
 .janela {
-
     width: 390px;
 
     background: white;
@@ -188,13 +171,11 @@ main {
 }
 
 
-
 /* =========================================
    BARRA DO NAVEGADOR
 ========================================= */
 
 .barra-navegador {
-
     height: 40px;
 
     background: #eeeeee;
@@ -208,26 +189,22 @@ main {
     padding-left: 15px;
 }
 
-
 .barra-navegador span {
-
     width: 11px;
 
     height: 11px;
 
-    background: #555;
+    background: #777;
 
     border-radius: 50%;
 }
 
 
-
 /* =========================================
-   CONTEÚDO DO PRIMEIRO PROJETO
+   CONTEÚDO DO SITE
 ========================================= */
 
 .conteudo-site {
-
     height: 320px;
 
     padding: 35px;
@@ -245,9 +222,7 @@ main {
     color: #761f3d;
 }
 
-
 .conteudo-site h2 {
-
     font-family: Georgia, serif;
 
     font-size: 32px;
@@ -257,9 +232,7 @@ main {
     margin-bottom: 15px;
 }
 
-
 .conteudo-site p {
-
     color: #333;
 
     line-height: 1.5;
@@ -267,9 +240,7 @@ main {
     margin-bottom: 20px;
 }
 
-
 .conteudo-site button {
-
     padding: 12px 20px;
 
     border: none;
@@ -281,14 +252,13 @@ main {
     border-radius: 5px;
 
     cursor: pointer;
-}
 
+    transition: 0.3s;
+}
 
 .conteudo-site button:hover {
-
     transform: scale(1.05);
 }
-
 
 
 /* =========================================
@@ -296,7 +266,6 @@ main {
 ========================================= */
 
 .conteudo-texto {
-
     height: 320px;
 
     padding: 30px;
@@ -310,17 +279,13 @@ main {
     justify-content: center;
 }
 
-
 .conteudo-texto > span {
-
     font-size: 14px;
 
     font-weight: bold;
 }
 
-
 .conteudo-texto h2 {
-
     font-family: Georgia, serif;
 
     font-style: italic;
@@ -330,9 +295,7 @@ main {
     margin: 8px 0 15px;
 }
 
-
 .conteudo-texto p {
-
     color: #333;
 
     font-size: 14px;
@@ -343,27 +306,21 @@ main {
 }
 
 
-
 /* =========================================
    DESCRIÇÃO AO LADO
 ========================================= */
 
 .descricao {
-
     width: 280px;
 }
 
-
 .descricao > span {
-
     font-size: 14px;
 
     font-weight: bold;
 }
 
-
 .descricao h2 {
-
     font-family: Georgia, serif;
 
     font-size: 35px;
@@ -373,14 +330,11 @@ main {
     margin: 10px 0;
 }
 
-
 .descricao p {
-
     line-height: 1.5;
 
     font-size: 15px;
 }
-
 
 
 /* =========================================
@@ -388,7 +342,6 @@ main {
 ========================================= */
 
 .botao {
-
     width: 50px;
 
     height: 50px;
@@ -410,14 +363,11 @@ main {
     z-index: 5;
 }
 
-
 .botao:hover {
-
     background: rgba(255, 255, 255, 0.3);
 
     transform: scale(1.1);
 }
-
 
 
 /* =========================================
@@ -425,7 +375,6 @@ main {
 ========================================= */
 
 .indicadores {
-
     position: relative;
 
     z-index: 3;
@@ -435,11 +384,11 @@ main {
     justify-content: center;
 
     gap: 10px;
+
+    margin-top: 5px;
 }
 
-
 .bolinha {
-
     width: 9px;
 
     height: 9px;
@@ -451,14 +400,272 @@ main {
     transition: 0.3s;
 }
 
-
 .bolinha.ativa {
-
     background: white;
 
     transform: scale(1.3);
 }
 
+
+/* =========================================
+   INDICAÇÃO PARA ROLAR
+========================================= */
+
+.indicacao-scroll {
+    position: relative;
+
+    z-index: 3;
+
+    width: 85%;
+
+    max-width: 1080px;
+
+    margin: 25px auto 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.indicacao-scroll::before,
+.indicacao-scroll::after {
+    content: "";
+
+    height: 1px;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    flex: 1;
+}
+
+.indicacao-scroll span {
+    font-size: 25px;
+
+    display: block;
+
+    margin-bottom: 4px;
+}
+
+.indicacao-scroll p {
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   SEÇÃO MEUS PROJETOS
+========================================= */
+
+.projetos {
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 100vh;
+
+    padding: 55px 8% 100px;
+}
+
+
+/* TÍTULO */
+
+.projetos > h2 {
+    font-family: Georgia, serif;
+
+    font-size: 55px;
+
+    font-style: italic;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+/* =========================================
+   LISTA DOS PROJETOS
+========================================= */
+
+.lista-projetos {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.card-projeto {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.25);
+
+    color: #333;
+
+    transition: 0.3s;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.card-projeto:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   BARRA DO CARD
+========================================= */
+
+.card-projeto .barra-navegador {
+    height: 35px;
+
+    padding-left: 14px;
+
+    background: #eeeeee;
+}
+
+
+/* Bolinhas menores */
+
+.card-projeto .barra-navegador span {
+    width: 10px;
+
+    height: 10px;
+}
+
+
+/* =========================================
+   CONTEÚDO DO CARD
+========================================= */
+
+.conteudo-card {
+    min-height: 220px;
+
+    padding: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   ÍCONE
+========================================= */
+
+.icone-projeto {
+    min-width: 100px;
+
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 12px;
+
+    background: #f8dce5;
+
+    color: #8c163c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TEXTO DO CARD
+========================================= */
+
+.texto-card {
+    flex: 1;
+}
+
+.texto-card h3 {
+    color: #761f3d;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    font-style: italic;
+
+    margin-bottom: 12px;
+}
+
+.texto-card p {
+    color: #333;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================
+   BOTÃO DOS PROJETOS
+========================================= */
+
+.texto-card a {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background: #8c163c;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.texto-card a:hover {
+    transform: scale(1.05);
+
+    background: #761f3d;
+}
 
 
 /* =========================================
@@ -466,12 +673,13 @@ main {
 ========================================= */
 
 footer {
+    position: relative;
 
-    position: absolute;
-
-    bottom: 20px;
+    z-index: 3;
 
     width: 100%;
+
+    padding: 25px;
 
     text-align: center;
 
@@ -481,7 +689,6 @@ footer {
 }
 
 
-
 /* =========================================
    RESPONSIVIDADE
 ========================================= */
@@ -489,51 +696,42 @@ footer {
 @media (max-width: 900px) {
 
     header h1 {
-
         font-size: 40px;
     }
 
-
-    .area-visualizacao {
-
-        width: 80vw;
+    main {
+        min-height: 75vh;
     }
 
+    .area-visualizacao {
+        width: 75vw;
+    }
 
-    .projeto {
-
-        width: 80vw;
+    .portfolio .projeto {
+        width: 75vw;
 
         flex-direction: column;
 
         gap: 15px;
     }
 
-
     .janela {
-
         width: 80vw;
 
         max-width: 390px;
     }
 
-
     .descricao {
-
-        width: 80vw;
+        width: 75vw;
 
         text-align: center;
     }
 
-
     .descricao h2 {
-
         font-size: 25px;
     }
 
-
     .botao {
-
         width: 40px;
 
         height: 40px;
@@ -541,4 +739,115 @@ footer {
         font-size: 20px;
     }
 
+    .lista-projetos {
+        grid-template-columns: 1fr;
+    }
+
+    .projetos > h2 {
+        font-size: 42px;
+    }
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding-top: 25px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    .texto-fundo {
+        font-size: 30vw;
+
+        top: 20%;
+    }
+
+    main {
+        gap: 5px;
+    }
+
+    .area-visualizacao {
+        width: 78vw;
+    }
+
+    .portfolio .projeto {
+        width: 78vw;
+    }
+
+    .janela {
+        width: 78vw;
+    }
+
+    .conteudo-site {
+        height: 280px;
+
+        padding: 25px;
+    }
+
+    .conteudo-site h2 {
+        font-size: 25px;
+    }
+
+    .descricao {
+        width: 78vw;
+    }
+
+    .descricao h2 {
+        font-size: 22px;
+    }
+
+    .indicacao-scroll {
+        width: 90%;
+    }
+
+    .indicacao-scroll p {
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .projetos {
+        padding: 60px 5% 80px;
+    }
+
+    .projetos > h2 {
+        font-size: 38px;
+
+        margin-bottom: 35px;
+    }
+
+    .conteudo-card {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px;
+    }
+
+    .icone-projeto {
+        min-width: 80px;
+
+        width: 80px;
+
+        height: 80px;
+    }
+
+    .texto-card h3 {
+        font-size: 20px;
+    }
+
+    .texto-card p {
+        font-size: 13px;
+    }
 }
